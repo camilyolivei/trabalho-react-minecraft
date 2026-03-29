@@ -17,9 +17,9 @@ function App() {
         
         <div style={{display: "flex", justifyContent: "space-evenly"}}>
         <button onClick={(e)=>setCategoria("Todas")}>Todas</button>
-        <button onClick={(e)=>setCategoria("ferramenta")}>Ferramenta</button>
-        <button onClick={(e)=>setCategoria("alimento")}>Alimento</button>
-        <button onClick={(e)=>setCategoria("bloco")}>Bloco</button>
+        <button onClick={(e)=>setCategoria("ferramenta")}>Ferramentas</button>
+        <button onClick={(e)=>setCategoria("alimento")}>Alimentos</button>
+        <button onClick={(e)=>setCategoria("bloco")}>Blocos</button>
         </div>
         
         <div>

@@ -114,189 +114,190 @@ export const itensMinecraft = [
     cura: 4,
     descricao: "Comida especial que concede regeneração e absorção"
 },
-  // --- Blocos ---
-  {
-    id: 1,
-    nome: "Pedra",
-    categoria: "bloco",
-    descricao: "Um dos blocos mais comuns; ao minerar vira pedregulho."
-  },
-  {
-    id: 2,
-    nome: "Pedregulho",
-    categoria: "bloco",
-    descricao: "Obtido ao minerar pedra; usado para ferramentas e construções."
-  },
-  {
-    id: 3,
-    nome: "Terra",
-    categoria: "bloco",
-    descricao: "Bloco básico encontrado na superfície, usado para agricultura."
-  },
-  {
-    id: 4,
-    nome: "Grama",
-    categoria: "bloco",
-    descricao: "Variação da terra coberta; espalha-se para blocos adjacentes."
-  },
-  {
-    id: 5,
-    nome: "Areia",
-    categoria: "bloco",
-    descricao: "Afeta pela gravidade; usada para vidro e concreto."
-  },
-  {
-    id: 6,
-    nome: "Areia Vermelha",
-    categoria: "bloco",
-    descricao: "Variantes encontrada em biomas de mesa; usada como areia comum."
-  },
-  {
-    id: 7,
-    nome: "Cascalho",
-    categoria: "bloco",
-    descricao: "Bloco influenciado por gravidade; pode dropar pederneira."
-  },
-  {
-    id: 8,
-    nome: "Madeira de Carvalho",
-    categoria: "bloco",
-    descricao: "Madeira base usada em ferramentas e construções."
-  },
-  {
-    id: 9,
-    nome: "Madeira de Bétula",
-    categoria: "bloco",
-    descricao: "Madeira clara usada em decorações."
-  },
-  {
-    id: 10,
-    nome: "Madeira de Pinheiro",
-    categoria: "bloco",
-    descricao: "Madeira escura encontrada em florestas de pinheiros."
-  },
+ 
+// --- Blocos ---
+{
+  id: 21,
+  nome: "Pedra",
+  categoria: "bloco",
+  descricao: "Um dos blocos mais comuns; ao minerar vira pedregulho."
+},
+{
+  id: 22,
+  nome: "Pedregulho",
+  categoria: "bloco",
+  descricao: "Obtido ao minerar pedra; usado para ferramentas e construções."
+},
+{
+  id: 23,
+  nome: "Terra",
+  categoria: "bloco",
+  descricao: "Bloco básico encontrado na superfície, usado para agricultura."
+},
+{
+  id: 24,
+  nome: "Grama",
+  categoria: "bloco",
+  descricao: "Variação da terra coberta; espalha-se para blocos adjacentes."
+},
+{
+  id: 25,
+  nome: "Areia",
+  categoria: "bloco",
+  descricao: "Afeta pela gravidade; usada para vidro e concreto."
+},
+{
+  id: 26,
+  nome: "Areia Vermelha",
+  categoria: "bloco",
+  descricao: "Variantes encontrada em biomas de mesa; usada como areia comum."
+},
+{
+  id: 27,
+  nome: "Cascalho",
+  categoria: "bloco",
+  descricao: "Bloco influenciado por gravidade; pode dropar pederneira."
+},
+{
+  id: 28,
+  nome: "Madeira de Carvalho",
+  categoria: "bloco",
+  descricao: "Madeira base usada em ferramentas e construções."
+},
+{
+  id: 29,
+  nome: "Madeira de Bétula",
+  categoria: "bloco",
+  descricao: "Madeira clara usada em decorações."
+},
+{
+  id: 30,
+  nome: "Madeira de Pinheiro",
+  categoria: "bloco",
+  descricao: "Madeira escura encontrada em florestas de pinheiros."
+},
 
-  // --- 11 a 20 ---
-  {
-    id: 11,
-    nome: "Tábua de Carvalho",
-    categoria: "bloco",
-    descricao: "Material versátil para construções e crafting."
-  },
-  {
-    id: 12,
-    nome: "Carvão Mineral",
-    categoria: "bloco",
-    descricao: "Bloco feito para armazenamento de carvão."
-  },
-  {
-    id: 13,
-    nome: "Ferro",
-    categoria: "bloco",
-    descricao: "Compacta lingotes de ferro; decorativo."
-  },
-  {
-    id: 14,
-    nome: "Ouro",
-    categoria: "bloco",
-    descricao: "Bloco decorativo e forma de armazenamento de ouro."
-  },
-  {
-    id: 15,
-    nome: "Redstone",
-    categoria: "bloco",
-    descricao: "Usado para energizar circuitos de redstone."
-  },
-  {
-    id: 16,
-    nome: "Lápis Lazúli",
-    categoria: "bloco",
-    descricao: "Armazena lápis-lazúli; bloco decorativo."
-  },
-  {
-    id: 17,
-    nome: "Bloco de Diamante",
-    categoria: "bloco",
-    descricao: "Armazena diamantes; usado como luxo."
-  },
-  {
-    id: 18,
-    nome: "Bloco de Esmeralda",
-    categoria: "bloco",
-    descricao: "Usado para armazenar esmeraldas; estético."
-  },
-  {
-    id: 19,
-    nome: "Vidro",
-    categoria: "bloco",
-    descricao: "Bloco transparente criado a partir de areia."
-  },
-  {
-    id: 20,
-    nome: "Obsidiana",
-    categoria: "bloco",
-    descricao: "Extremamente resistente; usada para portais do Nether."
-  },
+// 31 a 40
+{
+  id: 31,
+  nome: "Tábua de Carvalho",
+  categoria: "bloco",
+  descricao: "Material versátil para construções e crafting."
+},
+{
+  id: 32,
+  nome: "Carvão Mineral",
+  categoria: "bloco",
+  descricao: "Bloco feito para armazenamento de carvão."
+},
+{
+  id: 33,
+  nome: "Ferro",
+  categoria: "bloco",
+  descricao: "Compacta lingotes de ferro; decorativo."
+},
+{
+  id: 34,
+  nome: "Ouro",
+  categoria: "bloco",
+  descricao: "Bloco decorativo e forma de armazenamento de ouro."
+},
+{
+  id: 35,
+  nome: "Redstone",
+  categoria: "bloco",
+  descricao: "Usado para energizar circuitos de redstone."
+},
+{
+  id: 36,
+  nome: "Lápis Lazúli",
+  categoria: "bloco",
+  descricao: "Armazena lápis-lazúli; bloco decorativo."
+},
+{
+  id: 37,
+  nome: "Bloco de Diamante",
+  categoria: "bloco",
+  descricao: "Armazena diamantes; usado como luxo."
+},
+{
+  id: 38,
+  nome: "Bloco de Esmeralda",
+  categoria: "bloco",
+  descricao: "Usado para armazenar esmeraldas; estético."
+},
+{
+  id: 39,
+  nome: "Vidro",
+  categoria: "bloco",
+  descricao: "Bloco transparente criado a partir de areia."
+},
+{
+  id: 40,
+  nome: "Obsidiana",
+  categoria: "bloco",
+  descricao: "Extremamente resistente; usada para portais do Nether."
+},
 
-  // --- 21 a 30 (novos adicionados) ---
-  {
-    id: 21,
-    nome: "Tijolos de Pedra",
-    categoria: "bloco",
-    descricao: "Material clássico usado em construções robustas."
-  },
-  {
-    id: 22,
-    nome: "Tijolos",
-    categoria: "bloco",
-    descricao: "Criados com argila; usados em casas tradicionais."
-  },
-  {
-    id: 23,
-    nome: "Netherrack",
-    categoria: "bloco",
-    descricao: "Encontrado no Nether; queima eternamente."
-  },
-  {
-    id: 24,
-    nome: "Quartzito do Nether",
-    categoria: "bloco",
-    descricao: "Bloco branco decorativo usado em construções modernas."
-  },
-  {
-    id: 25,
-    nome: "End Stone",
-    categoria: "bloco",
-    descricao: "Bloco amarelo encontrado no End; resistente."
-  },
-  {
-    id: 26,
-    nome: "Concreto Branco",
-    categoria: "bloco",
-    descricao: "Bloco sólido usado em construções modernas."
-  },
-  {
-    id: 27,
-    nome: "Argila",
-    categoria: "bloco",
-    descricao: "Encontrada em rios; usada para tijolos."
-  },
-  {
-    id: 28,
-    nome: "Basalto",
-    categoria: "bloco",
-    descricao: "Bloco liso e escuro encontrado no Nether."
-  },
-  {
-    id: 29,
-    nome: "Deepslate",
-    categoria: "bloco",
-    descricao: "Variante profunda da pedra, mais resistente."
-  },
-  {
-    id: 30,
-    nome: "Folhagem de Carvalho",
-    categoria: "bloco",
-    descricao: "Bloco decorativo presente em árvores de carvalho."
-  }
-];
+// 41 a 50
+{
+  id: 41,
+  nome: "Tijolos de Pedra",
+  categoria: "bloco",
+  descricao: "Material clássico usado em construções robustas."
+},
+{
+  id: 42,
+  nome: "Tijolos",
+  categoria: "bloco",
+  descricao: "Criados com argila; usados em casas tradicionais."
+},
+{
+  id: 43,
+  nome: "Netherrack",
+  categoria: "bloco",
+  descricao: "Encontrado no Nether; queima eternamente."
+},
+{
+  id: 44,
+  nome: "Quartzito do Nether",
+  categoria: "bloco",
+  descricao: "Bloco branco decorativo usado em construções modernas."
+},
+{
+  id: 45,
+  nome: "End Stone",
+  categoria: "bloco",
+  descricao: "Bloco amarelo encontrado no End; resistente."
+},
+{
+  id: 46,
+  nome: "Concreto Branco",
+  categoria: "bloco",
+  descricao: "Bloco sólido usado em construções modernas."
+},
+{
+  id: 47,
+  nome: "Argila",
+  categoria: "bloco",
+  descricao: "Encontrada em rios; usada para tijolos."
+},
+{
+  id: 48,
+  nome: "Basalto",
+  categoria: "bloco",
+  descricao: "Bloco liso e escuro encontrado no Nether."
+},
+{
+  id: 49,
+  nome: "Deepslate",
+  categoria: "bloco",
+  descricao: "Variante profunda da pedra, mais resistente."
+},
+{
+  id: 50,
+  nome: "Folhagem de Carvalho",
+  categoria: "bloco",
+  descricao: "Bloco decorativo presente em árvores de carvalho."
+}
+]
