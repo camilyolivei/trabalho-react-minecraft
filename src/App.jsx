@@ -12,13 +12,15 @@ function App() {
     
   return (
     <>
-        <h2>Itens do Minecraft!!</h2>
-        <select value={categoria} onChange={(e)=>setCategoria(e.target.value)}>
-            <option value="Todas">Todas</option>
-            <option value="ferramenta">ferramenta</option>
-            <option value="alimento">alimento</option>
-            <option value="bloco">bloco</option>
-        </select>
+        <h1>Minecraft</h1>
+        <h3>Principais Itens do Jogo</h3>
+        
+        <div style={{display: "flex", justifyContent: "space-evenly"}}>
+        <button onClick={(e)=>setCategoria("Todas")}>Todas</button>
+        <button onClick={(e)=>setCategoria("ferramenta")}>Ferramenta</button>
+        <button onClick={(e)=>setCategoria("alimento")}>Alimento</button>
+        <button onClick={(e)=>setCategoria("bloco")}>Bloco</button>
+        </div>
         
         <div>
              {itensFiltrados.map((i)=>{
