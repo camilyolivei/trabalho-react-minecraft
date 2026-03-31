@@ -24,7 +24,7 @@ function App() {
         
         <div>
              {itensFiltrados.map((i)=>{
-                 return <Card key={i.id} nome={i.nome} dano={i.dano} descricao={i.descricao} categoria={i.categoria} cura={i.cura}/>
+                 return <Card key={i.id} nome={i.nome} dano={i.dano} descricao={i.descricao} categoria={i.categoria} cura={i.cura} imagem={i.imagem}/>
              })}
        </div>
     </>
