@@ -299,5 +299,12 @@ export const itensMinecraft = [
   nome: "Folhagem de Carvalho",
   categoria: "bloco",
   descricao: "Bloco decorativo presente em árvores de carvalho."
+},
+{
+  id: 51,
+  nome: "Arco",
+  categoria: "ferramenta",
+  dano: "4-9",
+  descricao: "Arma de longo alcance. Utilizado junto com a flecha. Quando mais mirar meior o dano"
 }
 ]
