@@ -1,4 +1,4 @@
-export default function Card({nome, categoria, descricao, dano, cura,excluir}) {
+export default function Card({ nome, categoria, descricao, dano, cura, url }) {
   return (
     <>
       <li>
@@ -7,6 +7,15 @@ export default function Card({nome, categoria, descricao, dano, cura,excluir}) {
         {dano && <p>Dano: {dano}</p>}
         {cura && <p>Cura: {cura}</p>}
         <p>{descricao}</p>
+        <img
+          src={url}
+          alt={nome}
+          style={{
+            imageRendering: "pixelated",
+            width: "100px",
+            height: "100px",
+          }}
+        />
       </li>
     </>
   );
