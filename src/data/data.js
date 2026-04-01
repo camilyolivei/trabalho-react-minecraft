@@ -77,6 +77,13 @@ const itensMinecraft = [
     categoria: "material",
     descricao: "Usado para fazer pães ou atrair animais.",
     url: wheatImg
+  },
+  {
+    id: 10,
+    nome: "trigo 2",
+    categoria: "material",
+    descricao: "Usado para fazer pães ou atrair animais.",
+    url: wheatImg
   }
 
 ];
