@@ -16,6 +16,7 @@ function App() {
 
   return (
     <>
+        {/* Input de Buscar Itens*/}
         <input type="text" placeholder="Buscar item..." value={textoBusca} onChange={(e)=>setTextoBusca(e.target.value)}></input>
         
       <Categoria setItens={setListaItens} textoBusca={textoBusca}/>
