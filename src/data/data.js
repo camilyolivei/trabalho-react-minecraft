@@ -8,7 +8,7 @@ import boneImg from "../assets/imagens/bone.png";
 import amethystShardImg from "../assets/imagens/amethyst_shard.png";
 import goldenSwordImg from "../assets/imagens/golden_sword.png";
 import wheatImg from "../assets/imagens/wheat.png";
-
+import netherPortal from "../assets/imagens/nether_portal.png"
 const itensMinecraft = [
   {
     id: 1,
@@ -20,6 +20,13 @@ const itensMinecraft = [
   },
   {
     id: 2,
+    nome: "Osso",
+    categoria: "material",
+    descricao: "Pode ser transformado em farelo de osso para fertilizante.",
+    url: boneImg
+  },
+  {
+    id: 3,
     nome: "Carne Crua",
     categoria: "alimento",
     cura: 3,
@@ -27,7 +34,7 @@ const itensMinecraft = [
     url: rawBeefImg
   },
   {
-    id: 3,
+    id: 4,
     nome: "Maçã Dourada",
     categoria: "alimento",
     cura: 4,
@@ -35,34 +42,29 @@ const itensMinecraft = [
     url: goldenAppleImg
   },
   {
-    id: 4,
+    id: 5,
     nome: "Picareta de Diamante",
     categoria: "ferramenta",
     dano: 5,
     descricao: "A melhor ferramenta para minerar qualquer minério.",
     url: diamondPickaxeImg
   },
-  {
-    id: 5,
-    nome: "Redstone",
-    categoria: "material",
-    descricao: "Pó condutor usado em circuitos e mecanismos.",
-    url: redstoneImg
-  },
-  {
+   {
     id: 6,
-    nome: "Osso",
-    categoria: "material",
-    descricao: "Pode ser transformado em farelo de osso para fertilizante.",
-    url: boneImg
-  },
-  {
-    id: 7,
     nome: "Fragmento de Ametista",
     categoria: "material",
     descricao: "Cristal roxo brilhante obtido em geodos.",
     url: amethystShardImg
   },
+  {
+    id: 7,
+    nome: "Redstone",
+    categoria: "material",
+    descricao: "Pó condutor usado em circuitos e mecanismos.",
+    url: redstoneImg
+  },
+  
+ 
   {
     id: 8,
     nome: "Espada de Ouro",
@@ -71,20 +73,22 @@ const itensMinecraft = [
     descricao: "Muito rápida e elegante, mas com baixa durabilidade.",
     url: goldenSwordImg
   },
-  {
+   {
     id: 9,
+    nome: "Portal do Nether",
+    categoria: "bloco", 
+    descricao: "Uma estrutura mística que serve como passagem para a dimensão do Nether.",
+    url: netherPortal
+  },
+  {
+    id: 10,
     nome: "Trigo",
     categoria: "material",
     descricao: "Usado para fazer pães ou atrair animais.",
     url: wheatImg
   },
-  {
-    id: 10,
-    nome: "trigo 2",
-    categoria: "material",
-    descricao: "Usado para fazer pães ou atrair animais.",
-    url: wheatImg
-  }
+ 
+  
 ];
 
 export default itensMinecraft;
