@@ -87,7 +87,6 @@ const itensMinecraft = [
     descricao: "Usado para fazer pães ou atrair animais.",
     url: wheatImg
   },
- 
   
 ];
 

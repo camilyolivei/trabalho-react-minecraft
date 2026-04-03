@@ -2,6 +2,7 @@ import React from "react";
 import itensMinecraft from "./data/data";
 import ListaCards from "./components/cards/ListaCards";
 import "../src/assets/style.css";
+import Categorias from "./components/categoria/Categorias";
 
 function App() {
   /* 
@@ -12,6 +13,7 @@ function App() {
 
   return (
     <>
+      <Categorias setItens={setListaItens}/>
       <ListaCards itens={estadoListaItens} />
     </>
   );
