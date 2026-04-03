@@ -15,7 +15,7 @@ const itensMinecraft = [
     nome: "Maçã",
     categoria: "alimento",
     cura: 4,
-    descricao: "Fruta vermelha básica para recuperar fome.",
+    descricao: "Alimento simples que recupera um pouco da fome.",
     url: appleImg
   },
   {
