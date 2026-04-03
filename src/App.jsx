@@ -1,34 +1,30 @@
-import { useState } from 'react'
-import './App.css'
-import Card from './components/Card.jsx'
-import { itensMinecraft } from './data/data.js'
-
+import React from "react";
+import itensMinecraft from "./data/data";
+import ListaCards from "./components/cards/ListaCards";
+import Categoria from "./components/categoria/Categoria";
+import "../src/assets/style.css";
 
 function App() {
-    const [categoria, setCategoria]=useState("Todas")
-    const itensFiltrados=categoria==="Todas"?itensMinecraft:itensMinecraft.filter((item)=>{
-        return item.categoria===categoria
-    })
-    
+  /* 
+    estadoListaItens:
+    Guarda os itens que estão sendo exibidos na tela.
+  */
+  //criei estados novos, sendo eles: texto de busca - o que o usuário digitar no input
+  const [estadoListaItens, setListaItens] = React.useState(itensMinecraft);
+  const [textoBusca, setTextoBusca] = React.useState("");
+  const [itensFiltrados, setItensFiltrados] = React.useState(itensMinecraft);
+
   return (
     <>
-        <h1>Minecraft</h1>
-        <h3>Principais Itens do Jogo</h3>
+        {/* Input de Buscar Itens*/}
+        <input type="text" placeholder="Buscar item..." value={textoBusca} onChange={(e)=>setTextoBusca(e.target.value)}></input>
+
         
-        <div style={{display: "flex", justifyContent: "space-evenly"}}>
-        <button onClick={(e)=>setCategoria("Todas")}>Todas</button>
-        <button onClick={(e)=>setCategoria("ferramenta")}>Ferramentas</button>
-        <button onClick={(e)=>setCategoria("alimento")}>Alimentos</button>
-        <button onClick={(e)=>setCategoria("bloco")}>Blocos</button>
-        </div>
-        
-        <div>
-             {itensFiltrados.map((i)=>{
-                 return <Card key={i.id} nome={i.nome} dano={i.dano} descricao={i.descricao} categoria={i.categoria} cura={i.cura}/>
-             })}
-       </div>
+      <Categoria setItens={setListaItens} textoBusca={textoBusca}/>
+
+      <ListaCards itens={estadoListaItens} />
     </>
-  )
+  );
 }
 
 export default App

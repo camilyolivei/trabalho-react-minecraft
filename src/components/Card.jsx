@@ -1,3 +1,4 @@
+
 export default function Card({ nome, descricao, dano, cura, categoria}) 
 {
   return (
