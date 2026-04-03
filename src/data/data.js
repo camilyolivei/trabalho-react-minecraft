@@ -87,4 +87,4 @@ const itensMinecraft = [
   }
 ];
 
-export default itensMinecraft;
+export default itensMinecraft

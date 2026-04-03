@@ -1,5 +1,6 @@
 import React from "react";
-import itensMinecraft from "../../data/data";
+import itensMinecraft from "../../data/data.js";
+
 //agora esse componente espera tambem o texto de busca como props
 const Categoria = ({ setItens, textoBusca }) => {
     //Adicionei texto de busca aqui que vem lá do App.jsx
