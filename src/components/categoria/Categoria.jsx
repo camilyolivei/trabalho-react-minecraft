@@ -56,3 +56,5 @@ const Categoria = ({ setItens, textoBusca }) => {
 };
 
 export default Categoria;
+
+

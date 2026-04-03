@@ -1,4 +1,4 @@
-// Importações das imagens (Vite precisa disso para processar arquivos na pasta src/assets)
+// Importações das imagens
 import appleImg from "../assets/imagens/apple.png";
 import rawBeefImg from "../assets/imagens/raw_beef.png";
 import goldenAppleImg from "../assets/imagens/golden_apple.png";
