@@ -1,7 +1,9 @@
 import React from "react";
 import itensMinecraft from "../../data/data";
-
+//agora esse componente espera tambem o texto de busca como props
 const Categoria = ({ setItens, textoBusca }) => {
+    //Adicionei texto de busca aqui que vem lá do App.jsx
+/*=============== Lógica para aparecer na tela os button com categoria únicas ============= */
   const [categoriaSelecionada, setCategoriaSelecionada] =
     React.useState("todos");
 
@@ -10,6 +12,8 @@ const Categoria = ({ setItens, textoBusca }) => {
     ...new Set(itensMinecraft.map((item) => item.categoria)),
   ];
 
+  /*=================================================================================*/
+  /* Quando clicar na tela e para pegar qual categoria foi clicada */
   function clicouCategoria(categoria) {
     setCategoriaSelecionada(categoria);
   }
