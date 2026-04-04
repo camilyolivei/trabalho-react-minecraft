@@ -1,7 +1,7 @@
 import React from "react";
 import itensMinecraft from "../../data/data";
 
-const Categorias = ({ setItens }) => {
+const Categorias = ({ setItensExibidos }) => {
   /* Estado que armazena a categoria atualmente selecionada */
 
   const [categoriaAtual, setCategoriaAtual] = React.useState("todos");
@@ -39,7 +39,7 @@ const Categorias = ({ setItens }) => {
           );
 
     /* Atualiza os itens mostrados na tela de acordo com a categoria */
-    setItens(itensFiltrados);
+    setItensExibidos(itensFiltrados);
   }, [categoriaAtual]);
 
   return (
