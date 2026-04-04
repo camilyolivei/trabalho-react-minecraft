@@ -86,8 +86,7 @@ const itensMinecraft = [
     categoria: "material",
     descricao: "Usado para fazer pães ou atrair animais.",
     url: wheatImg
-  },
-  
+  }
 ];
 
 export default itensMinecraft;
