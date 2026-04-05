@@ -10,13 +10,10 @@ function App() {
 
   return (
     <>
-      <input
-        type="text"
-        placeholder="Buscar item..."
-        className="bg-yellow-200 border-2 border-black text-red-600 p-3 rounded-xl shadow-xl"
+        <input type="text" placeholder="Buscar item..."
         value={textoBusca}
         onChange={(e) => setTextoBusca(e.target.value)}
-      />
+        className="block mx-auto w-11/12 max-w-md p-3 rounded-lg mb-6       border border-gray-300 text-black"/>
 
       <Categoria setItens={setItensFiltrados} textoBusca={textoBusca} />
 

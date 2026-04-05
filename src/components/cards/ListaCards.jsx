@@ -1,15 +1,11 @@
 import Card from "./Card";
 
-const ListaCards = ({ itens }) => {
+export default function ListaCards({ itens }) {
   return (
-    <>
-      <ul>
-        {itens.map(({ id, nome, categoria, descricao, dano, cura,url }) => (
-          <Card key={id}  nome={nome} categoria={categoria} descricao={descricao} dano={dano} cura={cura} url={url}/>
-        ))}
-      </ul>
-    </>
+    <ul className="grid grid-cols-2 gap-4 p-4">
+      {itens.map((item) => (
+        <Card key={item.id} {...item} />
+      ))}
+    </ul>
   );
-};
-
-export default ListaCards;
+}
