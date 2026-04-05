@@ -13,6 +13,7 @@ function App() {
       <input
         type="text"
         placeholder="Buscar item..."
+        className="bg-yellow-200 border-2 border-black text-red-600 p-3 rounded-xl shadow-xl"
         value={textoBusca}
         onChange={(e) => setTextoBusca(e.target.value)}
       />
