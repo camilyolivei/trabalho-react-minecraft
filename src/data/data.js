@@ -9,6 +9,8 @@ import amethystShardImg from "../assets/imagens/amethyst_shard.png";
 import goldenSwordImg from "../assets/imagens/golden_sword.png";
 import wheatImg from "../assets/imagens/wheat.png";
 import stoneShovelImg from "../assets/imagens/Stone_Shovel.png";
+import bowImg from "../assets/imagens/Bow.png";
+import crossbowImg from "../assets/imagens/Crossbow.png";
 
 const itensMinecraft = [
   {
@@ -94,6 +96,22 @@ const itensMinecraft = [
     descricao: "Ferramenta simples de pedra usada para cavar terra, areia e cascalho com eficiência.",
     url: stoneShovelImg
   },
+  {
+    id: 12,
+    nome: "Arco",
+    categoria: "arma",
+    dano: 1-11,
+    descricao: "Arma de longo alcance. Fica mais forte quanto mais tempo a corde é puxada.",
+    url: bowImg
+  },
+  {
+    id: 13,
+    nome: "Besta",
+    categoria: "arma",
+    dano: 6-11,
+    descricao: "Dispara mais forte e rapido que o arco, porem demora mais para recarregar.",
+    url: crossbowImg
+  }
 ];
 
 export default itensMinecraft
