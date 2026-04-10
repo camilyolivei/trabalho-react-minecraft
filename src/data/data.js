@@ -11,6 +11,8 @@ import wheatImg from "../assets/imagens/wheat.png";
 import stoneShovelImg from "../assets/imagens/Stone_Shovel.png";
 import bowImg from "../assets/imagens/Bow.png";
 import crossbowImg from "../assets/imagens/Crossbow.png";
+import ironAxeImg from "../assets/imagens/Iron_Axe.png";
+import coalImg from "../assets/imagens/Coal.png";
 
 const itensMinecraft = [
   {
@@ -83,10 +85,10 @@ const itensMinecraft = [
   },
   {
     id: 10,
-    nome: "trigo 2",
+    nome: "Carvão",
     categoria: "material",
-    descricao: "Usado para fazer pães ou atrair animais.",
-    url: wheatImg
+    descricao: "Combustível comum usado para acender fornos e criar tochas.",
+    url: coalImg
   },
   {
     id: 11,
@@ -100,7 +102,7 @@ const itensMinecraft = [
     id: 12,
     nome: "Arco",
     categoria: "arma",
-    dano: 1-11,
+    dano: "1-11",
     descricao: "Arma de longo alcance. Fica mais forte quanto mais tempo a corde é puxada.",
     url: bowImg
   },
@@ -108,9 +110,17 @@ const itensMinecraft = [
     id: 13,
     nome: "Besta",
     categoria: "arma",
-    dano: 6-11,
+    dano: "6-11",
     descricao: "Dispara mais forte e rapido que o arco, porem demora mais para recarregar.",
     url: crossbowImg
+  },
+  {
+    id: 14,
+    nome: "Machado de Ferro",
+    categoria: "ferramenta",
+    dano: 9,
+    descricao: "Ferramenta para cortar madeira.Golpe pesado e forte, mas mais lento que a espada.",
+    url: ironAxeImg
   }
 ];
 
