@@ -8,6 +8,7 @@ import boneImg from "../assets/imagens/bone.png";
 import amethystShardImg from "../assets/imagens/amethyst_shard.png";
 import goldenSwordImg from "../assets/imagens/golden_sword.png";
 import wheatImg from "../assets/imagens/wheat.png";
+import stoneShovelImg from "../assets/imagens/Stone_Shovel.png";
 
 const itensMinecraft = [
   {
@@ -84,7 +85,15 @@ const itensMinecraft = [
     categoria: "material",
     descricao: "Usado para fazer pães ou atrair animais.",
     url: wheatImg
-  }
+  },
+  {
+    id: 11,
+    nome: "Pá de Pedra",
+    categoria: "ferramenta",
+    dano: 3,
+    descricao: "Ferramenta simples de pedra usada para cavar terra, areia e cascalho com eficiência.",
+    url: stoneShovelImg
+  },
 ];
 
 export default itensMinecraft
