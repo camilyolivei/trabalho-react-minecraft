@@ -21,7 +21,7 @@ function App() {
         <input type="text" placeholder="Buscar item..."
         value={textoBusca}
         onChange={(e) => setTextoBusca(e.target.value)}
-        className="block mx-auto w-11/12 max-w-md p-3 rounded-lg mb-6       border border-grey-300 text-black"/>
+        className="block mx-auto w-11/12 max-w-md p-3 rounded-lg mb-6  border border-gray-300 text-black"/>
 
       <Categoria setItens={setItensFiltrados} textoBusca={textoBusca} />
 
