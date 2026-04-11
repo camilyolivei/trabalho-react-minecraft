@@ -3,8 +3,8 @@ import itensMinecraft from "../../data/data.js";
 
 const Categoria = ({ setItens, textoBusca }) => {
 
-  const [categoriaSelecionada, setCategoriaSelecionada] =
-    React.useState("todos");
+  const [categoriasSelecionadas, setCategoriasSelecionadas] =
+    React.useState([]);
 
   const todasCategorias = itensMinecraft.reduce((acc, item) => {
     return acc.concat(item.categoria);
@@ -16,7 +16,18 @@ const Categoria = ({ setItens, textoBusca }) => {
   ];
 
   function clicouCategoria(categoria) {
-    setCategoriaSelecionada(categoria);
+    if (categoria === "todos") {
+      setCategoriasSelecionadas([]);
+      return;
+    }
+
+    setCategoriasSelecionadas((prev) => {
+      if (prev.includes(categoria)) {
+        return prev.filter((cat) => cat !== categoria);
+      } else {
+        return [...prev, categoria];
+      }
+    });
   }
 
   React.useEffect(() => {
@@ -24,15 +35,12 @@ const Categoria = ({ setItens, textoBusca }) => {
     let filtrados = [...itensMinecraft];
 
     // FILTRO DE CATEGORIA
-    if (categoriaSelecionada !== "todos") {
-      
+    if (categoriasSelecionadas.length > 0) {
       filtrados = filtrados.filter((item) =>
-        item.categoria.some(
-          (cat) =>
-            cat.toLowerCase().trim() ===
-            categoriaSelecionada.toLowerCase().trim()
+        categoriasSelecionadas.every((catSelecionada) =>
+           item.categoria.includes(catSelecionada)
         )
-      );
+      ); 
     }
 
     if (textoBusca.trim() !== "") {
@@ -42,7 +50,7 @@ const Categoria = ({ setItens, textoBusca }) => {
     }
 
     setItens(filtrados);
-  }, [categoriaSelecionada, textoBusca]);
+  }, [categoriasSelecionadas, textoBusca]);
 
   return (
     <>
@@ -50,18 +58,16 @@ const Categoria = ({ setItens, textoBusca }) => {
         {categoriasUnicas.map((categoria) => (
           <li key={categoria}>
             <button
-              className="
-                bg-gradient-to-b from-[#5aa33a] to-[#3d7a28]
-                border-2 border-[#2a5a1f]
-                text-white font-bold uppercase
-                px-5 py-2
-                cursor-pointer
-                shadow-[inset_0_2px_0_#7ed957,inset_0_-2px_0_#2a5a1f,0_4px_0_#1a1a1a]
-                active:translate-y-[3px]
-                active:shadow-[inset_0_2px_0_#2a5a1f]
-                hover:brightness-110
-                transition-all
-              "
+              className={`
+              bg-gradient-to-b from-[#5aa33a] to-[#3d7a28]
+              border-2 border-[#2a5a1f]
+              text-white font-bold uppercase
+              px-5 py-2 cursor-pointer
+              transition-all
+              ${categoriasSelecionadas.includes(categoria)
+                ? "brightness-125 scale-105"
+                : "opacity-80"}
+              `}
               onClick={() => clicouCategoria(categoria)}
             >
               {categoria}
