@@ -20,7 +20,7 @@ const itensMinecraft = [
   {
     id: 1,
     nome: "Maçã",
-    categoria: "alimento",
+    categoria: ["alimento"],
     cura: 4,
     descricao: "Alimento simples que recupera um pouco da fome.",
     url: appleImg
@@ -28,7 +28,7 @@ const itensMinecraft = [
   {
     id: 2,
     nome: "Carne Crua",
-    categoria: "alimento",
+    categoria: ["alimento"],
     cura: 3,
     descricao: "Carne bovina que pode ser cozida para melhor efeito.",
     url: rawBeefImg
@@ -36,7 +36,7 @@ const itensMinecraft = [
   {
     id: 3,
     nome: "Maçã Dourada",
-    categoria: "alimento",
+    categoria: ["alimento"],
     cura: 4,
     descricao: "Item premium que concede efeitos de regeneração e resistência.",
     url: goldenAppleImg
@@ -44,7 +44,7 @@ const itensMinecraft = [
   {
     id: 4,
     nome: "Picareta de Diamante",
-    categoria: "ferramenta",
+    categoria: ["ferramenta"],
     dano: 5,
     descricao: "A melhor ferramenta para minerar qualquer minério.",
     url: diamondPickaxeImg
@@ -52,28 +52,28 @@ const itensMinecraft = [
   {
     id: 5,
     nome: "Redstone",
-    categoria: "minério",
+    categoria: ["minério", "drop"],
     descricao: "Pó condutor usado em circuitos e mecanismos.",
     url: redstoneImg
   },
   {
     id: 6,
     nome: "Osso",
-    categoria: "drop",
+    categoria: ["drop"],
     descricao: "Pode ser transformado em farelo de osso para fertilizante.",
     url: boneImg
   },
   {
     id: 7,
     nome: "Fragmento de Ametista",
-    categoria: "minério",
+    categoria: ["minério"],
     descricao: "Cristal roxo brilhante obtido em geodos.",
     url: amethystShardImg
   },
   {
     id: 8,
     nome: "Espada de Ouro",
-    categoria: "arma",
+    categoria: ["arma"],
     dano: 4,
     descricao: "Muito rápida e elegante, mas com baixa durabilidade.",
     url: goldenSwordImg
@@ -81,21 +81,21 @@ const itensMinecraft = [
   {
     id: 9,
     nome: "Polvora",
-    categoria: "drop",
+    categoria: ["drop"],
     descricao: "Material explosivo usado para criar TNT e foguetes.",
     url: gunpowderImg
   },
   {
     id: 10,
     nome: "Carvão",
-    categoria: "minério",
+    categoria: ["minério"],
     descricao: "Combustível comum usado para acender fornos e criar tochas.",
     url: coalImg
   },
   {
     id: 11,
     nome: "Pá de Pedra",
-    categoria: "ferramenta",
+    categoria: ["ferramenta"],
     dano: 3,
     descricao: "Ferramenta simples de pedra usada para cavar terra, areia e cascalho com eficiência.",
     url: stoneShovelImg
@@ -103,7 +103,7 @@ const itensMinecraft = [
   {
     id: 12,
     nome: "Arco",
-    categoria: "arma",
+    categoria: ["arma", "drop"],
     dano: "1-11",
     descricao: "Arma de longo alcance. Fica mais forte quanto mais tempo a corde é puxada.",
     url: bowImg
@@ -111,7 +111,7 @@ const itensMinecraft = [
   {
     id: 13,
     nome: "Besta",
-    categoria: "arma",
+    categoria: ["arma", "drop"],
     dano: "6-11",
     descricao: "Dispara mais forte e rapido que o arco, porem demora mais para recarregar.",
     url: crossbowImg
@@ -119,7 +119,7 @@ const itensMinecraft = [
   {
     id: 14,
     nome: "Machado de Ferro",
-    categoria: "ferramenta",
+    categoria: ["ferramenta"],
     dano: 9,
     descricao: "Ferramenta para cortar madeira.Golpe pesado e forte, mas mais lento que a espada.",
     url: ironAxeImg
@@ -127,14 +127,14 @@ const itensMinecraft = [
   {
     id: 15,
     nome: "Barra de Ferro",
-    categoria: "minério",
+    categoria: ["minério", "drop"],
     descricao: "Metal resistente usado em ferramentas, armaduras e estruturas.",
     url: ironIngotImg
   },
   {
     id: 16,
     nome: "Barra de Ouro",
-    categoria: "minério",
+    categoria: ["minério"],
     descricao: "Metal valioso usado em trocas, itens especiais e trilhos",
     url: goldIngotImg
   }

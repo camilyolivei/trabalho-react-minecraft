@@ -14,7 +14,17 @@ export default function Card({ nome, categoria, descricao, dano, cura, url }) {
       <h2 className="text-green-400 text-lg font-bold mb-1">{nome}</h2>
 
       <span className="text-xs text-gray-300 block mb-2">
-        Categoria: {categoria}
+        Categoria:
+        <div className="flex gap-1 mt-1 flex-wrap">
+          {categoria.map((cat) => (
+          <span
+            key={cat}
+            className="bg-green-700 px-2 py-1 rounded text-white text-xs"
+      >
+            {cat}
+          </span>
+          ))}
+        </div>
       </span>
 
       {dano && <p className="text-sm">Dano: {dano}</p>}
