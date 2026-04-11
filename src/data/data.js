@@ -7,12 +7,14 @@ import redstoneImg from "../assets/imagens/redstone.png";
 import boneImg from "../assets/imagens/bone.png";
 import amethystShardImg from "../assets/imagens/amethyst_shard.png";
 import goldenSwordImg from "../assets/imagens/golden_sword.png";
-import wheatImg from "../assets/imagens/wheat.png";
 import stoneShovelImg from "../assets/imagens/Stone_Shovel.png";
 import bowImg from "../assets/imagens/Bow.png";
 import crossbowImg from "../assets/imagens/Crossbow.png";
 import ironAxeImg from "../assets/imagens/Iron_Axe.png";
 import coalImg from "../assets/imagens/Coal.png";
+import ironIngotImg from "../assets/imagens/Iron_Ingot.png";
+import goldIngotImg from "../assets/imagens/Gold_Ingot.png";
+import gunpowderImg from "../assets/imagens/Gunpowder.png";
 
 const itensMinecraft = [
   {
@@ -50,21 +52,21 @@ const itensMinecraft = [
   {
     id: 5,
     nome: "Redstone",
-    categoria: "material",
+    categoria: "minério",
     descricao: "Pó condutor usado em circuitos e mecanismos.",
     url: redstoneImg
   },
   {
     id: 6,
     nome: "Osso",
-    categoria: "material",
+    categoria: "drop",
     descricao: "Pode ser transformado em farelo de osso para fertilizante.",
     url: boneImg
   },
   {
     id: 7,
     nome: "Fragmento de Ametista",
-    categoria: "material",
+    categoria: "minério",
     descricao: "Cristal roxo brilhante obtido em geodos.",
     url: amethystShardImg
   },
@@ -78,15 +80,15 @@ const itensMinecraft = [
   },
   {
     id: 9,
-    nome: "Trigo",
-    categoria: "material",
-    descricao: "Usado para fazer pães ou atrair animais.",
-    url: wheatImg
+    nome: "Polvora",
+    categoria: "drop",
+    descricao: "Material explosivo usado para criar TNT e foguetes.",
+    url: gunpowderImg
   },
   {
     id: 10,
     nome: "Carvão",
-    categoria: "material",
+    categoria: "minério",
     descricao: "Combustível comum usado para acender fornos e criar tochas.",
     url: coalImg
   },
@@ -121,6 +123,20 @@ const itensMinecraft = [
     dano: 9,
     descricao: "Ferramenta para cortar madeira.Golpe pesado e forte, mas mais lento que a espada.",
     url: ironAxeImg
+  },
+  {
+    id: 15,
+    nome: "Barra de Ferro",
+    categoria: "minério",
+    descricao: "Metal resistente usado em ferramentas, armaduras e estruturas.",
+    url: ironIngotImg
+  },
+  {
+    id: 16,
+    nome: "Barra de Ouro",
+    categoria: "minério",
+    descricao: "Metal valioso usado em trocas, itens especiais e trilhos",
+    url: goldIngotImg
   }
 ];
 
