@@ -120,7 +120,7 @@ const itensMinecraft = [
   {
     id: 14,
     nome: "Machado de Ferro",
-    categoria: ["ferramenta", "Arma"],
+    categoria: ["ferramenta", "arma"],
     dano: 9,
     descricao: "Ferramenta para cortar madeira.Golpe pesado e forte, mas mais lento que a espada.",
     url: ironAxeImg
@@ -140,12 +140,11 @@ const itensMinecraft = [
     url: goldIngotImg
   },
   {
-    id: 13,
+    id: 17,
     nome: "Tridente",
     categoria: ["arma", "drop"],
-    dano: "9",
     descricao: "Arma versátil que pode ser usada no corpo a corpo ou lançada à distância.",
-    url: tridentImg
+    url: tridentImg 
   }
 ];
 
