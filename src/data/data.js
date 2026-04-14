@@ -15,6 +15,7 @@ import coalImg from "../assets/imagens/Coal.png";
 import ironIngotImg from "../assets/imagens/Iron_Ingot.png";
 import goldIngotImg from "../assets/imagens/Gold_Ingot.png";
 import gunpowderImg from "../assets/imagens/Gunpowder.png";
+import tridentImg from "../assets/imagens/Trident.png";
 
 const itensMinecraft = [
   {
@@ -119,7 +120,7 @@ const itensMinecraft = [
   {
     id: 14,
     nome: "Machado de Ferro",
-    categoria: ["ferramenta"],
+    categoria: ["ferramenta", "Arma"],
     dano: 9,
     descricao: "Ferramenta para cortar madeira.Golpe pesado e forte, mas mais lento que a espada.",
     url: ironAxeImg
@@ -137,6 +138,14 @@ const itensMinecraft = [
     categoria: ["minério"],
     descricao: "Metal valioso usado em trocas, itens especiais e trilhos",
     url: goldIngotImg
+  },
+  {
+    id: 13,
+    nome: "Tridente",
+    categoria: ["arma", "drop"],
+    dano: "9",
+    descricao: "Arma versátil que pode ser usada no corpo a corpo ou lançada à distância.",
+    url: tridentImg
   }
 ];
 
