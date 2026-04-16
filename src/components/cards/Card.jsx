@@ -1,15 +1,12 @@
 export default function Card({ nome, categoria, descricao, dano, cura, url }) {
   return (
     <li className="
-      bg-[#2e2e2e]
-      border-4 border-black
-      rounded-lg
-      p-4
-      shadow-[0_6px_0_#0d0d0d]
-      hover:-translate-y-1
-      hover:shadow-[0_10px_0_#0d0d0d]
-      transition-all
-      text-white
+     bg-black/70
+     border-[4px] border-[#373737]
+     transition-all duration-200
+     hover:border-[#48ad39]
+     hover:scale-105
+     hover:z-10
     ">
       <h2 className="text-green-400 text-lg font-bold mb-1">{nome}</h2>
 
@@ -32,12 +29,21 @@ export default function Card({ nome, categoria, descricao, dano, cura, url }) {
 
       <p className="text-sm mt-2">{descricao}</p>
 
-      <img
-        src={url}
-        alt={nome}
-        className="w-20 h-20 mx-auto mt-4 border-2 border-black bg-[#111]"
-        style={{ imageRendering: "pixelated" }}
-      />
+      <div className="
+        w-24 h-24
+        mx-auto mt-4
+        bg-[#c6c6c6]
+        border-[3px] border-black
+        flex items-center justify-center
+        shadow-[inset_-3px_-3px_0px_#555,inset_3px_3px_0px_#fff]">
+        
+        <img
+          src={url}
+          alt={nome}
+          className="w-16 h-16"
+          style={{ imageRendering: 'pixelated' }}
+        />
+      </div>
     </li>
   );
 }

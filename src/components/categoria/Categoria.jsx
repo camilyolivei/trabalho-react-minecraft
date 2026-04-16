@@ -59,14 +59,14 @@ const Categoria = ({ setItens, textoBusca }) => {
           <li key={categoria}>
             <button
               className={`
-              bg-gradient-to-b from-[#5aa33a] to-[#3d7a28]
-              border-2 border-[#2a5a1f]
-              text-white font-bold uppercase
-              px-5 py-2 cursor-pointer
-              transition-all
-              ${categoriasSelecionadas.includes(categoria)
-                ? "brightness-125 scale-105"
-                : "opacity-80"}
+                px-5 py-2 font-bold uppercase text-white
+                border-[3px] border-[#1b5e20]
+                bg-gradient-to-b from-[#4caf50] to-[#2e7d32]
+                transition-all duration-150
+
+                ${categoriasSelecionadas.includes(categoria)
+                ? "enchanted scale-105 ring-2 ring-purple-400"
+                : ""}
               `}
               onClick={() => clicouCategoria(categoria)}
             >
