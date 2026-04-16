@@ -6,6 +6,9 @@ Bem-vindo ao **Projeto React Minecraft**! Este é um aplicativo web interativo d
 
 O objetivo deste projeto é demonstrar habilidades em desenvolvimento front-end utilizando React, gerenciamento de estado, componentes reutilizáveis e estilização moderna com TailwindCSS. A aplicação apresenta uma interface intuitiva onde os itens são categorizados e podem ser facilmente encontrados através de uma barra de busca.
 
+Segue o link para visualizar o resultado:
+https://camilyolivei.github.io/trabalho-react-minecraft/
+
 ## Screenshots
 
 ### Desktop
