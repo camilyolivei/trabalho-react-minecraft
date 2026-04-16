@@ -3,3 +3,63 @@
 .image-pixelated {
   image-rendering: pixelated;
 }
+
+:root {
+  --mc-green: #48ad39;
+  --mc-dark-green: #357a2a;
+  --mc-ui-bg: #c6c6c6;
+}
+
+body {
+  font-family: 'Pixelify Sans', cursive;
+  background-color: #1a1a1a;
+  background-image: url('https://www.transparenttextures.com/patterns/black-linen.png');
+  color: white;
+  min-height: 100vh;
+}
+
+/* Animações continuam aqui */
+@keyframes bounce-pixel {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+.animate-pixel-bounce {
+  animation: bounce-pixel 1s infinite steps(2);
+}
+
+@keyframes inventory-open {
+  from { opacity: 0; transform: scale(0.9) translateY(20px); }
+  to { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+.animate-inventory {
+  animation: inventory-open 0.3s ease-out forwards;
+}
+
+.enchanted {
+  position: relative;
+  overflow: hidden;
+}
+
+.enchanted::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    transparent 30%,
+    rgba(180, 0, 255, 0.4),
+    transparent 70%
+  );
+  animation: enchant-glow 2s linear infinite;
+}
+
+@keyframes enchant-glow {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
