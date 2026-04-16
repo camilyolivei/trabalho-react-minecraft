@@ -1,25 +1,11 @@
 import React from "react";
 import itensMinecraft from "../../data/data";
 
-const Categorias = ({ setItensExibidos }) => {
+const Categorias = ({ filtrarCategoria, categoriaAtiva }) => {
   const categorias = [
     "Todos",
     ...new Set(itensMinecraft.flatMap((item) => item.categoria)),
   ];
-
-  const [categoriaAtiva, setCategoriaAtiva] = React.useState("Todos");
-
-  const filtrarCategoria = (categoria) => {
-    setCategoriaAtiva(categoria);
-    if (categoria === "Todos") {
-      setItensExibidos(itensMinecraft);
-    } else {
-      const filtrados = itensMinecraft.filter((item) =>
-        item.categoria.includes(categoria),
-      );
-      setItensExibidos(filtrados);
-    }
-  };
 
   return (
     <div className="w-full flex flex-col items-center gap-3 px-2 sm:px-0">

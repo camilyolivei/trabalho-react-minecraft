@@ -1,15 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import itensMinecraft from '../../data/data';
 
-const BarraBusca = ({ setItensExibidos }) => {
-
-    function aoDigitarNoCampoDePesquisa(evento) {
-        const textoDigitado = evento.target.value.toLowerCase().trim();
-        const itensFiltrados = itensMinecraft.filter((item) => 
-            item.nome.toLowerCase().includes(textoDigitado)
-        );
-        setItensExibidos(itensFiltrados);
-    }
+const BarraBusca = ({ aoDigitarNoCampoDePesquisa }) => {
 
     return (
         <section className="w-full bg-[#121212] py-2 border-b border-[#222]">

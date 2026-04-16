@@ -5,18 +5,14 @@ import BarraBusca from "./components/busca/BarraBusca";
 import MenuSuperior from "./components/menuSuperior/MenuSuperior";
 import ConteudoDaLoja from "./components/conteudoDaLoja/ConteudoDaLoja";
 import Rodape from "./components/rodape/Rodape";
+import BuscaCategoria from "./components/buscaCategoria/BuscaCategoria";
 
 function App() {
   const [itensExibidos, setItensExibidos] = React.useState(itensMinecraft);
 
   return (
     <div className="min-h-screen bg-[#000000] flex flex-col overflow-x-hidden">
-      <MenuSuperior
-        setItensExibidos={setItensExibidos}
-        itensExibidos={itensExibidos}
-      />
-
-      <BarraBusca setItensExibidos={setItensExibidos} />
+      <BuscaCategoria setItensExibidos={setItensExibidos} />
 
       <ConteudoDaLoja
         setItensExibidos={setItensExibidos}
@@ -24,7 +20,6 @@ function App() {
       />
 
       <Rodape />
-
     </div>
   );
 }
