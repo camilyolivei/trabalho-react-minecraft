@@ -34,7 +34,6 @@ const Categoria = ({ setItens, textoBusca }) => {
     
     let filtrados = [...itensMinecraft];
 
-    // FILTRO DE CATEGORIA
     if (categoriasSelecionadas.length > 0) {
       filtrados = filtrados.filter((item) =>
         categoriasSelecionadas.every((catSelecionada) =>
