@@ -1,48 +1,67 @@
-export default function Card({ nome, categoria, descricao, dano, cura, url }) {
+export default function Card({ item }) {
   return (
-    <li className="
-     bg-black/70
-     border-[4px] border-[#373737]
-     transition-all duration-200
-     hover:border-[#48ad39]
-     hover:scale-105
-     hover:z-10
-    ">
-      <h2 className="text-green-400 text-lg font-bold mb-1">{nome}</h2>
-
-      <span className="text-xs text-gray-300 block mb-2">
-        Categoria:
-        <div className="flex gap-1 mt-1 flex-wrap">
-          {categoria.map((cat) => (
-          <span
-            key={cat}
-            className="bg-green-700 px-2 py-1 rounded text-white text-xs"
-      >
-            {cat}
-          </span>
-          ))}
-        </div>
-      </span>
-
-      {dano && <p className="text-sm">Dano: {dano}</p>}
-      {cura && <p className="text-sm">Cura: {cura}</p>}
-
-      <p className="text-sm mt-2">{descricao}</p>
-
+    <li className="list-none group">
       <div className="
-        w-24 h-24
-        mx-auto mt-4
-        bg-[#c6c6c6]
-        border-[3px] border-black
-        flex items-center justify-center
-        shadow-[inset_-3px_-3px_0px_#555,inset_3px_3px_0px_#fff]">
-        
-        <img
-          src={url}
-          alt={nome}
-          className="w-16 h-16"
-          style={{ imageRendering: 'pixelated' }}
-        />
+        relative p-6 flex flex-col items-center gap-4 h-full
+        bg-black/70 border-[4px] border-[#373737]
+        transition-all duration-300
+        hover:border-[#8fca5c]
+        hover:shadow-[0_0_20px_rgba(143,202,92,0.4)]
+        ">
+
+        <span className="
+          absolute -top-3 left-4
+          bg-[#866043]
+          border-2 border-black
+          px-3 py-1
+          text-xs font-bold uppercase text-white
+          shadow-[2px_2px_0px_#000]
+          z-20
+          ">
+            {Array.isArray(item.categoria)
+            ? item.categoria.join(" & ")
+            : item.categoria}
+        </span>
+
+        <div className="
+          w-32 h-32
+          bg-[#373737]
+          border-[4px] border-black
+          shadow-[inset_-4px_-4px_0px_#1a1a1a,inset_4px_4px_0px_#555]
+          flex items-center justify-center
+          p-4 overflow-hidden
+          ">
+            <img
+              src={item.url}
+              alt={item.nome}
+              className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-110"
+              style={{ imageRendering: "pixelated" }}
+            />
+      </div>
+
+        <div className="text-center w-full flex flex-col gap-2">
+          <h2 className="
+            text-2xl font-bold uppercase tracking-wider
+            text-[#ffd83d]
+            drop-shadow-[2px_2px_0px_#000]
+            group-hover:text-white
+            transition-colors
+          ">
+            {item.nome}
+          </h2>
+
+          {item.dano && (
+            <p className="text-[#c6c6c6] text-sm">Dano: {item.dano}</p>
+          )}
+
+          {item.cura && (
+            <p className="text-[#c6c6c6] text-sm">Cura: {item.cura}</p>
+          )}
+
+          <p className="text-[#c6c6c6] text-sm leading-relaxed min-h-[40px] italic">
+            "{item.descricao}"
+          </p>
+        </div>
       </div>
     </li>
   );
