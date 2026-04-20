@@ -18,7 +18,46 @@ body {
   min-height: 100vh;
 }
 
-/* Animações continuam aqui */
+/* ========================= */
+/* SCROLL HORIZONTAL MOBILE */
+/* ========================= */
+
+@media (max-width: 640px) {
+  .lista-cards {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 16px;
+    padding: 16px;
+    scroll-behavior: smooth;
+
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+  }
+
+  .lista-cards::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+  }
+
+  .lista-cards > * {
+    min-width: 220px;
+    flex-shrink: 0;
+  }
+}
+
+/* Classe reutilizável (caso use no JSX) */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  scrollbar-width: none;
+}
+
+/* ========================= */
+/* ANIMAÇÕES */
+/* ========================= */
+
 @keyframes bounce-pixel {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-5px); }
@@ -56,10 +95,6 @@ body {
 }
 
 @keyframes enchant-glow {
-  from {
-    transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(100%);
-  }
+  from { transform: translateX(-100%); }
+  to { transform: translateX(100%); }
 }

@@ -1,3 +1,5 @@
+import Busca from "../busca/Busca";
+
 export default function Header ({textoBusca,setTextoBusca}){
 return(
     <>
@@ -9,10 +11,7 @@ return(
             Catálogo de Itens
         </h2>
 
-        <input type="text" placeholder="Buscar item..."
-        value={textoBusca}
-        onChange={(e) => setTextoBusca(e.target.value)}
-        className="block mx-auto w-11/12 max-w-md p-3 rounded-lg mb-6  border border-gray-300"/>
+        <Busca textoBusca={textoBusca} setTextoBusca={setTextoBusca}/>
     </>
 )
 }

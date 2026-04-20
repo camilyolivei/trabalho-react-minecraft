@@ -21,25 +21,24 @@ const Categoria = ({ setItens, textoBusca }) => {
       return;
     }
 
-    setCategoriasSelecionadas((prev) => {
-      if (prev.includes(categoria)) {
-        return prev.filter((cat) => cat !== categoria);
+    setCategoriasSelecionadas((categoriaAtual) => {
+      if (categoriaAtual.includes(categoria)) {
+        return categoriaAtual.filter((cat) => cat !== categoria);
       } else {
-        return [...prev, categoria];
+        return [...categoriaAtual, categoria];
       }
     });
   }
 
   React.useEffect(() => {
-    
     let filtrados = [...itensMinecraft];
 
     if (categoriasSelecionadas.length > 0) {
       filtrados = filtrados.filter((item) =>
         categoriasSelecionadas.every((catSelecionada) =>
-           item.categoria.includes(catSelecionada)
+          item.categoria.includes(catSelecionada)
         )
-      ); 
+      );
     }
 
     if (textoBusca.trim() !== "") {
@@ -53,31 +52,31 @@ const Categoria = ({ setItens, textoBusca }) => {
 
   return (
     <>
-      <ul className="flex justify-center flex-wrap gap-3 mb-10">
-        {categoriasUnicas.map((categoria) => (
-          <li key={categoria}>
-            <button
-              className={`
-                px-5 py-2 font-bold uppercase text-white
-                border-[3px] border-[#1b5e20]
-                bg-gradient-to-b from-[#4caf50] to-[#2e7d32]
-                transition-all duration-150
+      <div className="w-full flex flex-col items-center gap-3 p-6 sm:px-0 mb-10">
+        <div className="flex flex-wrap justify-center gap-2">
+          {categoriasUnicas.map((categoria) => {
+            const isAtiva =
+              (categoria === "todos" && categoriasSelecionadas.length === 0) ||
+              categoriasSelecionadas.includes(categoria);
 
-                ${categoriasSelecionadas.includes(categoria)
-                ? "enchanted scale-105 ring-2 ring-purple-400"
-                : ""}
-              `}
-              onClick={() => clicouCategoria(categoria)}
-            >
-              {categoria}
-            </button>
-          </li>
-        ))}
-      </ul>
+            return (
+              <button
+                key={categoria}
+                onClick={() => clicouCategoria(categoria)}
+                className={`cursor-pointer text-xs sm:text-sm uppercase font-bold px-4 py-2 rounded-md transition-all duration-200 whitespace-nowrap hover:scale-105 hover:shadow-lg ${
+                  isAtiva
+                    ? "bg-[#8FCA5C] text-[#000] border-2 border-[#000] shadow-[inset_-3px_-3px_0px_#357a2a,inset_3px_3px_0px_#fff] scale-105"
+                    : "bg-[#222] text-[#eee] border border-[#444] hover:bg-[#333]"
+                }`}
+              >
+                {categoria}
+              </button>
+            );
+          })}
+        </div>
+      </div>
     </>
   );
 };
 
 export default Categoria;
-
-
