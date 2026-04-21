@@ -6,9 +6,7 @@ const Categoria = ({ setItens, textoBusca }) => {
   const [categoriasSelecionadas, setCategoriasSelecionadas] =
     React.useState([]);
 
-  const todasCategorias = itensMinecraft.reduce((acc, item) => {
-    return acc.concat(item.categoria);
-  }, []);
+  const todasCategorias = itensMinecraft.flatMap(item => item.categoria);
 
   const categoriasUnicas = [
     "todos",
