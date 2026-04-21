@@ -17,11 +17,6 @@ https://camilyolivei.github.io/trabalho-react-minecraft/
   <img src="./src/assets/imagens/imgReadme/desktop_optimized.png" alt="Visão Desktop" style="max-width: 700px; width: 100%;">
 </div>
 
-### Mobile
-
-<div align="center">
-  <img src="./src/assets/imagens/imgReadme/minecraft_app_feminine_hand.png" alt="Visão Mobile" style="max-width: 300px; width: 100%;">
-</div>
 
 ## Tecnologias Utilizadas
 
