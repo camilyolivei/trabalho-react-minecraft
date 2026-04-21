@@ -87,25 +87,33 @@ trabalho-react-minecraft/
 ├── public/
 ├── src/
 │   ├── assets/
-│   │   ├── imagens/ # Imagens dos itens
-│   │   └── style.css # Estilos globais
-│   ├── components/ # Componentes React reutilizáveis
+│   │   ├── imagens/
+│   │   │   ├── Stone_Shovel.png
+│   │   │   ├── Trident.png
+│   │   │   └── wheat.png
+│   │   └── style.css
+│   ├── components/
 │   │   ├── busca/
-│   │   ├── buscaCategoria/
+│   │   │   └── Busca.jsx
 │   │   ├── cards/
+│   │   │   ├── Card.jsx
+│   │   │   └── ListaCards.jsx
 │   │   ├── categoria/
-│   │   ├── conteudoDaLoja/
-│   │   ├── menuSuperior/
-│   │   └── rodape/
-│   ├── data/ # Dados mockados dos itens
-│   │   └── data.js
-│   ├── App.jsx # Componente principal da aplicação
-│   └── main.jsx # Ponto de entrada da aplicação
+│   │   │   └── Categoria.jsx
+│   │   ├── footer/
+│   │   │   └── Footer.jsx
+│   │   └── Header/
+│   │       └── Header.jsx
+│   ├── data/
+│   ├── App.jsx
+│   └── main.jsx
 ├── .gitignore
+├── eslint.config.js
 ├── index.html
+├── package-lock.json
 ├── package.json
-├── vite.config.js
-└── README.md
+├── README.md
+└── vite.config.js
 ```
 
 ## Responsividade
