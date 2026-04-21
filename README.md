@@ -1,18 +1,121 @@
-# React + Vite
+# Projeto React Minecraft
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bem-vindo ao **Projeto React Minecraft**! Este é um aplicativo web interativo desenvolvido com React que simula uma loja de itens do universo Minecraft. Ele permite aos usuários visualizar, filtrar e buscar itens, proporcionando uma experiência de navegação fluida e responsiva.
 
-Currently, two official plugins are available:
+## Visão Geral do Projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+O objetivo deste projeto é demonstrar habilidades em desenvolvimento front-end utilizando React, gerenciamento de estado, componentes reutilizáveis e estilização moderna com TailwindCSS. A aplicação apresenta uma interface intuitiva onde os itens são categorizados e podem ser facilmente encontrados através de uma barra de busca.
 
-## React Compiler
+Segue o link para visualizar o resultado:
+https://camilyolivei.github.io/trabalho-react-minecraft/
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## Screenshots
 
-Note: This will impact Vite dev & build performances.
+### Desktop
 
-## Expanding the ESLint configuration
+<div align="center">
+  <img src="./src/assets/imagens/imgReadme/desktop_optimized.png" alt="Visão Desktop" style="max-width: 700px; width: 100%;">
+</div>
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Mobile
+
+<div align="center">
+  <img src="./src/assets/imagens/imgReadme/mobile_optimized.png" alt="Visão Mobile" style="max-width: 300px; width: 100%;">
+</div>
+
+## Tecnologias Utilizadas
+
+*   **React**: Biblioteca JavaScript para construção de interfaces de usuário.
+*   **Vite**: Ferramenta de build rápida para projetos web modernos.
+*   **TailwindCSS**: Framework CSS utilitário para estilização rápida e responsiva.
+*   **JavaScript (ES6+)**: Linguagem de programação principal.
+*   **HTML5/CSS3**: Estrutura e estilização básica.
+
+## Funcionalidades
+
+*   **Listagem de Itens**: Exibe uma variedade de itens do Minecraft com suas descrições e atributos.
+*   **Filtro por Categoria**: Permite filtrar itens por categorias como 'Alimento', 'Material', 'Ferramenta', 'Arma', 'Bloco' e 'Portal'.
+*   **Barra de Busca**: Funcionalidade de busca para encontrar itens específicos pelo nome.
+*   **Design Responsivo**: Interface adaptável a diferentes tamanhos de tela, de desktops a dispositivos móveis.
+
+## Como Rodar o Projeto Localmente
+
+Siga os passos abaixo para configurar e executar o projeto em sua máquina local:
+
+### Pré-requisitos
+
+Certifique-se de ter o [Node.js](https://nodejs.org/) e o [npm](https://www.npmjs.com/) (ou Yarn) instalados em seu sistema.
+
+### Instalação
+
+1.  **Clone o repositório:**
+
+    ```bash
+    git clone https://github.com/camilyolivei/trabalho-react-minecraft.git
+    ```
+
+2.  **Navegue até o diretório do projeto:**
+
+    ```bash
+    cd trabalho-react-minecraft
+    ```
+
+3.  **Instale as dependências:**
+
+    ```bash
+    npm install
+    # ou yarn install
+    ```
+
+### Execução
+
+1.  **Inicie o servidor de desenvolvimento:**
+
+    ```bash
+    npm run dev
+    # ou yarn dev
+    ```
+
+2.  **Acesse o aplicativo:**
+
+    Abra seu navegador e navegue para `http://localhost:5173` (ou a porta indicada pelo Vite, caso a 5173 esteja em uso).
+
+## Estrutura do Projeto
+
+```
+trabalho-react-minecraft/
+├── public/
+├── src/
+│   ├── assets/
+│   │   ├── imagens/ # Imagens dos itens
+│   │   └── style.css # Estilos globais
+│   ├── components/ # Componentes React reutilizáveis
+│   │   ├── busca/
+│   │   ├── buscaCategoria/
+│   │   ├── cards/
+│   │   ├── categoria/
+│   │   ├── conteudoDaLoja/
+│   │   ├── menuSuperior/
+│   │   └── rodape/
+│   ├── data/ # Dados mockados dos itens
+│   │   └── data.js
+│   ├── App.jsx # Componente principal da aplicação
+│   └── main.jsx # Ponto de entrada da aplicação
+├── .gitignore
+├── index.html
+├── package.json
+├── vite.config.js
+└── README.md
+```
+
+## Responsividade
+
+O projeto foi desenvolvido com uma abordagem **mobile-first**, garantindo que a interface se adapte perfeitamente a qualquer tamanho de tela, desde smartphones até monitores de desktop. A utilização do TailwindCSS facilitou a implementação de um design flexível e otimizado para diversas resoluções.
+
+## Contribuição
+
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou pull requests para melhorias e novas funcionalidades.
+
+---
+
+**Desenvolvido com ❤️ por Camily , William e Victor**
