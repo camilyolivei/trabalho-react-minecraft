@@ -3,7 +3,7 @@ import itensMinecraft from "./data/data.js";
 import ListaCards from "./components/cards/ListaCards.jsx";
 import Categoria from "./components/categoria/Categoria.jsx";
 import "../src/assets/style.css";
-import Header from "./components/Header/Header.jsx";
+import Header from "./components/header/Header.jsx";
 import Footer from "./components/footer/Footer.jsx";
 
 function App() {

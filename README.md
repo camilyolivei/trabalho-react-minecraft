@@ -20,7 +20,7 @@ https://camilyolivei.github.io/trabalho-react-minecraft/
 ### Mobile
 
 <div align="center">
-  <img src="./src/assets/imagens/imgReadme/mobile_optimized.png" alt="Visão Mobile" style="max-width: 300px; width: 100%;">
+  <img src="./src/assets/imagens/imgReadme/minecraft_app_feminine_hand.png" alt="Visão Mobile" style="max-width: 300px; width: 100%;">
 </div>
 
 ## Tecnologias Utilizadas

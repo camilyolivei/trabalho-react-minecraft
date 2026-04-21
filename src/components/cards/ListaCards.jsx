@@ -2,7 +2,7 @@ import Card from "./Card";
 
 export default function ListaCards({ itens }) {
   return (
-    <div className="w-full px-4">
+    <div className="w-full px-4 mb-[3rem]">
       {itens.length === 0 ? (
         <div className="w-full py-20 flex flex-col items-center justify-center gap-6 animate-pulse">
           <div className="text-8xl grayscale opacity-50">📦</div>
