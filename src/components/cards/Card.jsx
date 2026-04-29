@@ -1,8 +1,27 @@
-export default function Card({ item }) {
-  if (!item) return null;
+import { useState } from "react";
+import itensMinecraft from "../../data/data";
 
+export default function Card({ item , setItemDestaque,itemDestaque,setAtivo,ativo}) {
+  if (!item) return null;
+  
+
+
+  function adicionarDestaque(item){
+    let valores = [...itemDestaque,item]
+      setItemDestaque(valores)
+      console.log(itemDestaque)
+    
+      
+
+    }
+    
   return (
     <div className="group w-full h-full">
+
+
+
+
+
       <div
         className="
         relative w-full h-full
@@ -89,6 +108,7 @@ export default function Card({ item }) {
           >
             "{item.descricao}"
           </p>
+          <button onClick={()=> adicionarDestaque(item)} >Destaque</button>
         </div>
       </div>
     </div>

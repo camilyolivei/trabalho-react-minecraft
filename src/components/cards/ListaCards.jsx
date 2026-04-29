@@ -1,6 +1,6 @@
 import Card from "./Card";
 
-export default function ListaCards({ itens }) {
+export default function ListaCards({ itens,setItemDestaque,itemDestaque,setAtivo,ativo }) {
   return (
     <div className="w-full px-4 mb-[3rem]">
       {itens.length === 0 ? (
@@ -33,7 +33,9 @@ export default function ListaCards({ itens }) {
     sm:w-auto sm:min-w-0 sm:max-w-none
   "
             >
-              <Card item={item} />
+              
+      
+              <Card item={item} setItemDestaque={setItemDestaque} itemDestaque={itemDestaque} setAtivo={setAtivo} ativo={ativo}/>
             </li>
           ))}
         </ul>
